@@ -6,9 +6,6 @@ struct myArray{
     int *ptr; // array 1st element ko point karega
 };
 void createArray(struct myArray*a, int tsize, int usize){
-    // (*a).total_size=tsize;
-    // (*a).used_size=usize;
-    // (*a).ptr=(int*)malloc(tsize*sizeof(int));
     a->total_size=tsize;
     a->used_size=usize;
     a->ptr=(int*)malloc(tsize*sizeof(int));
